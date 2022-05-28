@@ -1,105 +1,136 @@
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Cairo";
 }
 
 body {
-  background-color: #845ec2;
+  background-color: ghostwhite;
 }
 
-/* #region Navigation Styles */
-
-.header {
-  display: flex;
-  flex-wrap: wrap;
+.container {
   width: 100%;
-  height: 90px;
-  padding-bottom: 90px;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.name {
-  font-family: "Cairo", sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  color: white;
+/* #region Navigation*/
 
-  margin-left: 2%;
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #845ec2;
 }
 
-.navproducts {
-  margin: 30px 0 2% 2%;
-  color: white;
-  font-weight: 300;
-  font-size: 25px;
-  font-family: "Cairo";
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 25px;
 }
 
-.contact {
-  margin: 30px 0 2% 2%;
-
-  color: white;
-  font-weight: 300;
-  font-size: 25px;
-  font-family: "Cairo";
+nav {
+  flex: 1;
+  text-align: right;
 }
 
-.privacy_policy {
-  margin: 30px 2% 2% 2%;
-
-  font-weight: 300;
-  font-family: "Cairo";
-  font-size: 25px;
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
 }
 
-.privacy_policy a {
+nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 14px;
 }
-
+nav ul li a:hover {
+  text-decoration: none;
+  color: #845ec2;
+  font-size: 14px;
+}
 /* #endregion*/
 
-.sectionTitle {
+.games h2 {
+  margin-top: 100px;
   text-align: center;
-  font-family: "Cairo";
-  font-size: 50px;
-  color: white;
-  font-weight: 600;
-  padding-bottom: 40px;
+  font-size: 100px;
+  padding-top: 10px;
 }
 
-/* #region Products*/
-
-#products {
-  border-radius: 10px;
-
-  background-color: #4b4453;
-  width: 95%;
-  text-align: center;
-  margin: 0 auto;
-}
-.games {
+.row {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
 }
-.logo {
-  border-radius: 10px;
-  width: 150px;
-}
-.gamename {
+
+.col {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
   text-align: center;
 }
-.game {
-  flex: 1 1 100px;
-  margin: 10px;
 
-  font-weight: 300;
-  font-family: "Cairo";
-  font-size: 25px;
+.col img {
+  width: 60%;
+  border-radius: 15%;
 }
 
-.gamelink {
+.col h2 {
+  font-size: 30px;
+  margin: 20px 0 10px;
+  font-weight: 100;
+}
+
+.col a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
-/* #endregion */
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(
+      to right top,
+      #051937,
+      #004d7a,
+      #008793,
+      #00bf72,
+      #a8eb12
+    );
+    top: 75px;
+    right: 0px;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-list {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .row {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+}

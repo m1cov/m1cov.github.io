@@ -4,77 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Micov</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <title>Micov</title>
   </head>
-
   <body>
-    <div class="header">
-      <div class="name">MICOV</div>
+    <div class="container">
+      <div class="navbar">
+        <h1>MICOV</h1>
+        <nav>
+          <ul id="menu-list">
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </nav>
 
-      <div class="navproducts"><a>Products</a></div>
-      <div class="contact"><a>Contact</a></div>
-      <div class="privacy_policy">
-        <a href="privacyPolicy.html">Privacy Policy</a>
+        <img src="img/menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+
+      <div class="games" id="products"><h2>PRODUCTS</h2></div>
+
+      <div class="row">
+        <div class="col">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.Micov.Taydia"
+          >
+            <img src="logos/taydia.png" />
+            <h2>Taydia</h2>
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=com.Micov.cq">
+            <img src="logos/cq.png" />
+            <h2>cq</h2>
+          </a>
+        </div>
+
+        <div class="col">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.Micov.com.SpaceAssault"
+          >
+            <img src="logos/spaceAssault.png" />
+            <h2>Space Assault</h2>
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.Micov.Trivia"
+          >
+            <img src="logos/trivia.png" />
+            <h2>Trivia</h2>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="content">
-      <section id="products">
-        <div class="sectionTitle">Products</div>
+    <script>
+      var menulist = document.getElementById("menu-list");
+      menulist.style.maxHeight = "0px";
 
-        <div class="games">
-          <div class="game">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.Micov.Taydia"
-              class="gamelink"
-            >
-              <p class="gamename">
-                <img src="logos/taydia.png" class="logo" /><br />Taydia
-              </p>
-            </a>
-          </div>
-          <div class="game">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.Micov.com.SpaceAssault"
-              class="gamelink"
-            >
-              <p class="gamename">
-                <img src="logos/spaceAssault.png" class="logo" /><br />Space
-                Assault
-              </p>
-            </a>
-          </div>
-          <div class="game">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.Micov.cq"
-              class="gamelink"
-            >
-              <p class="gamename">
-                <img src="logos/cq.png" class="logo" /><br />cq
-              </p>
-            </a>
-          </div>
-          <div class="game">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.Micov.Trivia"
-              class="gamelink"
-            >
-              <p class="gamename">
-                <img src="logos/trivia.png" class="logo" /><br />Trivia
-              </p>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+      function togglemenu() {
+        if (menulist.style.maxHeight == "0px")
+          menulist.style.maxHeight = "130px";
+        else menulist.style.maxHeight = "0px";
+      }
+    </script>
   </body>
 </html>
