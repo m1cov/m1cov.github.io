@@ -17,7 +17,14 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
+.policy{
 
+  display: block;
+  margin: 50px 0;
+  justify-content: space-between;
+  text-align: justify;
+
+}
 /* #region Navigation*/
 
 .navbar {
@@ -25,6 +32,11 @@ body {
   display: flex;
   align-items: center;
   border-bottom: solid 1px #845ec2;
+}
+
+.navbar h1 {
+  font-weight: 200;
+  font-size: 35px;
 }
 
 .menu-icon {
@@ -139,4 +151,5 @@ nav ul li a:hover {
     flex-direction: column;
     margin: 50px 0;
   }
+
 }
