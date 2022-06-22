@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: ghostwhite;
+  background-color: #f8f8ff;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #845ec2;
+  border-bottom: solid 1px #FB2E01;
 }
 
 .navbar h1 {
