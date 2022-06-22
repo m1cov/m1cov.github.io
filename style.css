@@ -37,6 +37,12 @@ body {
   font-size: 35px;
 }
 
+.navbar img{
+  width: 35px;
+  margin-right: 10px;
+
+}
+
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -107,7 +113,10 @@ nav ul li a:hover {
 
 /* #region Contact*/
 
-  
+#contact {
+  margin-bottom: 100px;
+  text-align: left;
+}
 
 /* #endregion*/
 
