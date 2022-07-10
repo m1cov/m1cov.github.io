@@ -115,7 +115,22 @@ nav ul li a:hover {
 
 #contact {
   margin-bottom: 100px;
-  text-align: left;
+  text-align: center;
+
+}
+
+.contact-links{
+
+  text-decoration: none;
+  color: black;
+  
+
+}
+
+#contact a:hover{
+  color: 845ec2;
+  text-decoration: none;
+
 }
 
 /* #endregion*/
