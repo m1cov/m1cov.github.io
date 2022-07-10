@@ -118,18 +118,24 @@ nav ul li a:hover {
   text-align: center;
 
 }
-
-.contact-links{
+#contact span a{
 
   text-decoration: none;
   color: black;
+  font-size: 20px;
   
 
 }
 
-#contact a:hover{
+#contact span a:hover{
   color: 845ec2;
   text-decoration: none;
+
+}
+
+span img{
+
+  width: 20px;
 
 }
 
