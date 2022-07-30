@@ -2,26 +2,20 @@
   padding: 0%;
   margin: 0%;
   font-family: "Cairo";
+  background-color: white;
 }
 
-body {
-  background-color: #f8f8ff;
-}
-
-.container {
+.policy {
+  display: block;
   width: 100%;
   min-height: 100vh;
   padding-left: 8%;
   padding-right: 8%;
-
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.policy {
-  display: block;
-  margin: 50px 0;
   justify-content: space-between;
   text-align: justify;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: white;
 }
 /* #region Navigation*/
 
@@ -29,7 +23,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #FB2E01;
+  border-bottom: solid 1px #fb2e01;
 }
 
 .navbar h1 {
@@ -37,10 +31,9 @@ body {
   font-size: 35px;
 }
 
-.navbar img{
+.navbar img {
   width: 35px;
   margin-right: 10px;
-
 }
 
 .menu-icon {
@@ -72,88 +65,11 @@ nav ul li a:hover {
 }
 /* #endregion*/
 
-.section h2 {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 4em;
-  padding-top: 10px;
-}
-/* #region Products*/
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 100px 0;
-}
-
-.col {
-  flex-basis: 40%;
-  position: relative;
-  margin: 0 50px 0 50px;
-  text-align: center;
-}
-
-.col img {
-  width: 60%;
-  border-radius: 15%;
-}
-
-.col h2 {
-  font-size: 30px;
-  margin: 20px 0 10px;
-  font-weight: 100;
-}
-
-.col a {
-  text-decoration: none;
-  color: black;
-}
-/* #endregion*/
-
-/* #region Contact*/
-
-#contact {
-  margin-bottom: 100px;
-  text-align: center;
-
-}
-#contact span a{
-
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  
-
-}
-
-#contact span a:hover{
-  color: 845ec2;
-  text-decoration: none;
-
-}
-
-span img{
-
-  width: 20px;
-
-}
-
-/* #endregion*/
-
-/*#region Privacy Policy*/
-
-/*endregion*/
-
 @media only screen and (max-width: 700px) {
   nav ul {
     width: 100%;
     position: absolute;
-    background-image: linear-gradient(
-      to right top,
-      #845ec2,
-      #FB2E01
-    );
+    background-image: linear-gradient(to right top, #845ec2, #fb2e01);
     top: 75px;
     right: 0px;
     z-index: 2;

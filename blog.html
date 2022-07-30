@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="img/2.png" />
+    <title>Micov</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="img/1.png" alt="" />
+        <h1>MICOV</h1>
+        <nav>
+          <ul id="menu-list">
+            <li><a href="index.html#products">Products</a></li>
+            <!--             <li><a href="index.html#contact">Contact</a></li> -->
+            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          </ul>
+        </nav>
+
+        <img src="img/menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+
+      <div class="section" id="products"><h2>PRODUCTS</h2></div>
+
+      <div class="row">
+        <div class="col">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.Micov.Taydia"
+          >
+            <img src="logos/taydia.png" />
+            <h2>Taydia</h2>
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=com.Micov.cq">
+            <img src="logos/cq.png" />
+            <h2>cq</h2>
+          </a>
+        </div>
+
+        <div class="col">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.Micov.com.SpaceAssault"
+          >
+            <img src="logos/spaceAssault.png" />
+            <h2>Space Assault</h2>
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.Micov.Trivia"
+          >
+            <img src="logos/trivia.png" />
+            <h2>Trivia</h2>
+          </a>
+        </div>
+      </div>
+
+       <div class="section" id="contact">
+        <h2>CONTACT</h2>
+
+        
+        <span><a  href="mailto: rade.micov@yahoo.com"><img src="img/email.png"> rade.micov@gmail.com</a><br></span>
+        <span class="instagram-link">
+          
+          <a  href="https://www.instagram.com/rademicov/"><img src="img/instagram.png"> rademicov</a>
+
+        </span>
+
+         </div> 
+      </div>
+    </div>
+
+    <script>
+      var menulist = document.getElementById("menu-list");
+      menulist.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menulist.style.maxHeight == "0px")
+          menulist.style.maxHeight = "130px";
+        else menulist.style.maxHeight = "0px";
+      }
+    </script>
+  </body>
+</html>
