@@ -1,0 +1,150 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Cairo";
+}
+
+body {
+  background-color: #f8f8ff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* #region Navigation*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #fb2e01;
+}
+
+.navbar h1 {
+  font-weight: 200;
+  font-size: 35px;
+}
+
+.navbar img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 25px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: #845ec2;
+  font-size: 14px;
+}
+/* #endregion*/
+
+.section h2 {
+  margin-top: 100px;
+  font-size: 4em;
+  padding-top: 10px;
+}
+
+/* #region Posts*/
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.col {
+  flex-basis: 40%;
+  position: relative;
+  margin: 0 50px 0 50px;
+  text-align: center;
+
+  border: 1px solid black;
+}
+
+.col img {
+  width: 60%;
+  border-radius: 15%;
+}
+
+.col h2 {
+  font-size: 30px;
+  margin: 20px 0 10px;
+  font-weight: 100;
+}
+
+.col a {
+  text-decoration: none;
+  color: black;
+}
+
+.col a:hover{
+
+    text-decoration: none;
+    color: black;
+
+}
+/* #endregion*/
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to right top, #845ec2, #fb2e01);
+    top: 75px;
+    right: 0px;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-list {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .row {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+}

@@ -17,19 +17,13 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
-.policy {
-  display: block;
-  margin: 50px 0;
-  justify-content: space-between;
-  text-align: justify;
-}
 /* #region Navigation*/
 
 .navbar {
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #FB2E01;
+  border-bottom: solid 1px #fb2e01;
 }
 
 .navbar h1 {
@@ -37,10 +31,9 @@ body {
   font-size: 35px;
 }
 
-.navbar img{
+.navbar img {
   width: 35px;
   margin-right: 10px;
-
 }
 
 .menu-icon {
@@ -109,6 +102,13 @@ nav ul li a:hover {
   text-decoration: none;
   color: black;
 }
+
+.col a:hover{
+
+  text-decoration: none;
+  color: black;
+
+}
 /* #endregion*/
 
 /* #region Contact*/
@@ -116,31 +116,23 @@ nav ul li a:hover {
 #contact {
   margin-bottom: 100px;
   text-align: center;
-
 }
-#contact span a{
-
+#contact span a {
   text-decoration: none;
   color: black;
   font-size: 20px;
-  
-
 }
 
-#contact span a:hover{
+#contact span a:hover {
   color: 845ec2;
   text-decoration: none;
-
 }
 
-span img{
-
+span img {
   width: 20px;
-
 }
 
 /* #endregion*/
-
 
 /*endregion*/
 
@@ -148,11 +140,7 @@ span img{
   nav ul {
     width: 100%;
     position: absolute;
-    background-image: linear-gradient(
-      to right top,
-      #845ec2,
-      #FB2E01
-    );
+    background-image: linear-gradient(to right top, #845ec2, #fb2e01);
     top: 75px;
     right: 0px;
     z-index: 2;
