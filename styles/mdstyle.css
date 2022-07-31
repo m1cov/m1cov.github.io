@@ -1,3 +1,54 @@
-body{
-    background-color: white;
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Cairo";
+  background-color: white;
 }
+
+/* #region Navigation*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #fb2e01;
+}
+
+.navbar h1 {
+  font-weight: 200;
+  font-size: 35px;
+}
+
+.navbar img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 25px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: #845ec2;
+  font-size: 14px;
+}
+/* #endregion*/

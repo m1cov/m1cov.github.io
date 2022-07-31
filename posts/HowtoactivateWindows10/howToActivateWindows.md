@@ -1,0 +1,35 @@
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/indexStyle.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        >
+<!-- Font Awesome Kit -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="icon" type="image/x-icon" href="img/2.png">
+<title>Micov</title>
+</head>
+
+ <div class="container">
+            <div class="navbar">
+                <img src="img/1.png" alt="">
+                <h1>MICOV</h1>
+                <nav>
+                    <ul id="menu-list">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="privacyPolicy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+                <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
