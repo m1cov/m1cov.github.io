@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <title>Micov</title>
+        <link rel="icon" href="img/2.png">
+        <style>
+
+            .navbar-nav .nav-link {
+                text-decoration: none;
+                color: #f8f8f8;;
+                position: relative;
+            }
+            
+            .navbar-nav .nav-link::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                display: block;
+                margin-top: 5px;
+                right: 0;
+                background: #f8f8f8;
+                transition: width 0.3s ease;
+            }
+            
+            .navbar-nav .nav-link:hover::after {
+                width: 100%;
+                left: 0;
+                background: #f8f8f8;;
+            }
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: #070707;">
+            <!--Desktop Navbar-->
+            <div class="container-fluid d-none d-lg-flex" style="margin-left: 8vw;">
+                <div>
+                    <a class="navbar-brand align-top mt-2" href="/home.html">
+                        <img src="img/2.png" width="75vw" data-bs-target="collapse">
+                    </a>
+                </div>
+                <div class="justify-content-center mx-auto">
+                    <ul class="navbar-nav mx-auto text-white fs-5">
+                        <li class="nav-item mx-4 text-center">
+                            <a href="#electrician" class="nav-link" style="text-decoration: none; color:#f8f8f8;">Електрика</a>
+                        </li>
+                        <li class="nav-item mx-4 text-center">
+                            <a href="#webdev" class="nav-link" style="text-decoration: none; color:#f8f8f8;">Веб дизајн</a>
+                        </li>
+                        <li class="nav-item mx-4 text-center">
+                            <a href="#server" class="nav-link" style="text-decoration: none; color:#f8f8f8;">Сервери</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Mobile Navbar-->
+            <div class="container-fluid d-sm-flex d-lg-none">
+                <a class="navbar-brand align-top mt-2" href="/home.html">
+                    <img src="img/2.png" width="75vw" data-bs-target="collapse">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="text-end fs-5 my-1">
+                            <a class="dropdown-item text-white" href="#electrician">Електрика</a>
+                        </li>
+                        <li class="text-end fs-5 my-1">
+                            <a class="dropdown-item text-white" href="#webdev">Веб дизајн</a>
+                        </li>
+                        <li class="text-end fs-5 my-1">
+                            <a class="dropdown-item text-white" href="#server">Сервери</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="electrician" class="mt-5 justify-content-center mx-auto">
+        <h2 class="text-center ">Електрика</h2>
+        <div class="container d-flex text-center mt-5 mb-5">
+            <div class="col-lg-6 col-12">
+                <ul>
+                    <li>
+                        Монтажа и поправка на електрични мрежи: Професионална инсталација на штекери, 
+                        прекинувачи и други електрични компоненти.
+                    </li>
+                    <li>
+                        Дизајн и инсталација на осветлување: Креативни решенија за лустери, 
+                        ЛЕД осветлување и плафонерки кои ги подобруваат вашите простории.
+                    </li>
+                    <li>
+                        Сигурност и комуникација: Инсталација на домофони 
+                        за вашиот мир и интернет мрежи за вашиот комфорт.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6"></div>
+        </div>
+    </section>
+    <section id="webdev" class=" justify-content-center mx-auto">
+        <h2 class="text-center">Веб дизајн</h2>
+        <div class="container d-flex text-center mt-5 mb-5">
+            <div class="col-lg-6 col-12">
+                <ul>
+                    <li>
+                        Модерни и респонзивни дизајни: Стратегии што се прилагодуваат
+                        на мобилните уреди и десктоп прелисти.
+                    </li>
+                    <li>
+                        Потребните интерфејси и искуства за корисници: Креирање на 
+                        удобни и едноставни за употреба искуства за вашите клиенти.
+                    </li>
+                    <li>
+                        Целосна интеграција со социјалните мрежи: Осигурување на потребната 
+                        врска за вашата присуство на интернетот.
+                    </li>
+                    <li>
+                        Поддршка и одржување: Редовно надгледување и ажурирање на вашиот 
+                        веб сајт за оптимална перформанса.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="server" class="justify-content-center mx-auto">
+        <h2 class="text-center">Сервери</h2>
+        <div class="container d-flex text-center mt-5 mb-5">
+            <div class="col-lg-6 col-12">
+                <ul>
+                    <li>
+                        Инсталација на сервери: Професионална конфигурација и монтажа 
+                        на сервери според вашите потреби и бизнис зафат користејќи Proxmox.
+                    </li>
+                    <li>
+                        Конфигурација на мрежни рутери и прекинувачи: Осигурување на сигурна 
+                        и ефикасна мрежна комуникација во вашиот објект.
+                    </li>
+                    <!--  <li>
+                        Целосна интеграција со социјалните мрежи: Осигурување на потребната 
+                        врска за вашата присуство на интернетот.
+                    </li> -->
+                    <li>
+                        Одржување и поддршка: Редовна надгледба и техничка поддршка за 
+                        вашите мрежни уреди за да се осигура непрекината оперативност.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer style="background: #070707;" class="mt-2 pb-2">
+        <!-- Mobile Footer -->
+        <div class="container d-flex d-lg-none mt-2 justify-content-center">
+            <div class="row">
+                <ul style="text-decoration: none;" class="text-white mt-2 text-align-center list-inline">
+                    <li class="text-center mt-1">
+                        
+                        <img src="img/phone.png" style="filter: invert();" height="25">
+                        071 621 400</li>
+                    <li class="text-center">
+                        <a target="_blank" class="d-flex justify-content-center mt-1" style="text-decoration: none;" href="mailto:rade.micov@gmail.com">
+                            <img src="img/email.png" style="filter:invert();" height="25">
+                            <p class="mx-2 text-white">rade.micov@gmail.com</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-white text-center">
+                    Designed by Rade Micov 2024 - All rights reserved
+                </div>
+            </div>
+        </div>
+        <!-- Desktop Footer -->
+    </footer>
+</body>
+</html>
