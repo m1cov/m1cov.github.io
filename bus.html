@@ -19,6 +19,13 @@
         <meta name="description" content="Сервис за компјутери, сервери, веб дизајн и електрика">
         <style>
 
+            .rotate-down {
+                transform: rotate(90deg);
+            }
+            .rotate-up {
+                transform: rotate(-90deg);
+            }
+
             .navbar-nav .nav-link {
                 text-decoration: none;
                 color: #f8f8f8;;
@@ -95,19 +102,54 @@
         </div>
     </nav>
     <div class="container col-12 mx-auto  row d-flex justify-content-center">
-
-        <div class=" container row col-6 d-flex my-5 justify-content-center mx-auto">
+        <div class=" container row col-8 d-flex my-5 justify-content-center mx-auto">
             <p class="fs-3 text-center">Пребарај Линии</p>
-            <input type="text" placeholder="Search...">
+            <input type="text" style="border-radius:10px; border:1px solid #888888" placeholder="Search...">
         </div>
+        <div id="routes" style="border-top: 1px solid black;">
+            <div id="destination" class="mt-4 mb-5">
+                <h3 class="mb-3">Скопје -> Охрид</h3>
+                <div id="company" style="background-color: #f8f8f8; border-radius:15px">
+                    <div id="logo" class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex col-4 align-items-center justify-content-start">
+                            <img
+                                src="logos/2048.png"
+                                class="m-3"
+                                style="border-radius: 10px;"
+                                width="100vw"
+                            >
+                            <span class="text-center fs-1">Фирма</span>
+                        </div>
+                        <div class="mx-5 text-center col-lg-4 d-none d-lg-flex fs-4">Цена: 700 ден</div>
+                        <button
+                            class="navbar-toggler col-4"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#belgrad"
+                            aria-controls="belgrad"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                            id="navbar-toggler"
+                        >
+                            <div class="mx-5 fs-3" id="toggle-icon" style="color:#888888"> > </div>
+                        </button>
+                    </div>
+                    <div id="belgrad" class="py-4 fs-5 row text-center collapse navbar-collapse">
+                        <div class="col-6">
 
-        <div id="routes">
+                            <div class="d-lg-none">Цена 700 ден</div>
 
-            
-
-        </div>
-
-
+                            Време:
+                            6 часа
+                        </div>
+                        <div class="col-6">
+                            Повратен билет:
+                            3000 ден
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
     </div>
     <footer style="background: #070707;" class="mt-2 pb-2">
         <!-- Mobile Footer -->
@@ -166,6 +208,29 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarToggler = document.getElementById('navbar-toggler');
+            const toggleIcon = document.getElementById('toggle-icon');
+    
+
+            // Initially set the icon to point down
+            toggleIcon.classList.add('rotate-down');
+
+            navbarToggler.addEventListener('click', function () {
+                if (toggleIcon.classList.contains('rotate-up')) {
+                    toggleIcon.classList.remove('rotate-up');
+                    toggleIcon.classList.add('rotate-down');
+                } else {
+                    toggleIcon.classList.remove('rotate-down');
+                    toggleIcon.classList.add('rotate-up');
+                }
+            });
+        });
+    </script>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
